@@ -20,6 +20,41 @@ En los siguientes enlaces se pueden consultar los prototipos de interacción des
 * [Ver prototipo Aplicación Web](https://www.figma.com/proto/nys5SfSqGC2WUOJisWk6rZ/MISO---UX-Mejoramiento-de-la-experiencia-de-usuario---Proyecto-Alarmas--Prototipo-?node-id=1-2&p=f&t=KKbBB3Ooh1Uz5Vrm-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2)
 * [Ver prototipo Aplicación Mobile](https://www.figma.com/proto/nys5SfSqGC2WUOJisWk6rZ/MISO---UX-Mejoramiento-de-la-experiencia-de-usuario---Proyecto-Alarmas--Prototipo-?node-id=2042-1517&p=f&t=qu6YcFs3eaQJoaNB-0&scaling=scale-down&content-scaling=fixed&page-id=156%3A2734&starting-point-node-id=2042%3A1517)
 
-# 3. Instrucciones ejecución Web
+# 3. Aplicación Web
 
-# 4. Instrucciones ejecución Mobile
+## Funciones implementadas
+
+* Autenticación
+* Autenticación de dos factores
+* Consultar alarmas
+* Crear alarmas
+* Editar alarmas
+* Generar código QR de alarmas
+* Eliminar alarma
+* Consultar dispositivos
+* Vincular dispositivo
+* Perfil del usuario
+
+## Tecnologías
+
+* HTML
+* CSS
+* Javascript
+* Vue.js
+
+## Instrucciones de ejecución
+
+Para ejecutar la Aplicación Web, debe tener instalado: <code>node</code> y <code>npm</code>. Luego ejecute los siguientes comandos en su consola:
+
+1. cd web/
+2. npm install
+3. npm run dev
+4. Ingrese a la url generada, por defecto: http://localhost:5173/
+
+# 4. Aplicación Mobile
+
+## Funciones implementadas
+
+## Tecnologías
+
+## Instrucciones de ejecución

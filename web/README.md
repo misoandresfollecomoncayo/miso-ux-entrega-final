@@ -1,7 +1,30 @@
-# Vue 3 + Vite
+# Aplicación Web
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Funciones implementadas
 
-## Recommended IDE Setup
+* Autenticación
+* Autenticación de dos factores
+* Consultar alarmas
+* Crear alarmas
+* Editar alarmas
+* Generar código QR de alarmas
+* Eliminar alarma
+* Consultar dispositivos
+* Vincular dispositivo
+* Perfil del usuario
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Tecnologías
+
+* HTML
+* CSS
+* Javascript
+* Vue.js
+
+## Instrucciones de ejecución
+
+Para ejecutar la Aplicación Web, debe tener instalado: <code>node</code> y <code>npm</code>. Luego ejecute los siguientes comandos en su consola:
+
+1. cd web/
+2. npm install
+3. npm run dev
+4. Ingrese a la url generada, por defecto: http://localhost:5173/

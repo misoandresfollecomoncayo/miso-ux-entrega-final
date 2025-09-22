@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo 1: Poppins grande -->
+    <style name="TextoTituloGrande">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">33sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">33sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Estilo 2: Open Sans normal -->
+    <style name="TextoOpenSansNormal">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">16pt</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">19pt</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Estilo 3: Open Sans bold en mayúsculas -->
+    <style name="TextoOpenSansBoldMayusculas">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">19pt</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

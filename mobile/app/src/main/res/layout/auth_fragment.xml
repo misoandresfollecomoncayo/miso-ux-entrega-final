@@ -106,25 +106,32 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/loginButton"
             android:layout_width="156dp"
             android:layout_height="50dp"
             android:layout_marginTop="41dp"
+            android:text="INGRESAR"
+            style="@style/labelsButtons"
+            android:background="@drawable/bg_principal"
+            app:backgroundTint="@null"
             app:layout_constraintTop_toBottomOf="@id/inputContraseña"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:background="@drawable/bg_principal" />
+            app:layout_constraintStart_toStartOf="parent"/>
 
-        <Button
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/signinButton"
             android:layout_width="156dp"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
+            android:text="CREAR CUENTA"
+            style="@style/labelsButtonsSecondary"
+            android:background="@drawable/bg_secondary"
+            app:backgroundTint="@null"
             app:layout_constraintTop_toBottomOf="@id/loginButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:background="@drawable/bg_principal"
             />
 
 

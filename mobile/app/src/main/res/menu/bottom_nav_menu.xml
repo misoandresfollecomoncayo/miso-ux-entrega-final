@@ -2,13 +2,13 @@
     <item
         android:id="@+id/userFragment"
         android:title="Usuario"
-        android:icon="@drawable/userbutton"/>
+        android:icon="@drawable/user"/>
     <item
         android:id="@+id/alarmsFragment"
         android:title="Alarmas"
-        android:icon="@drawable/alarmsbutton"/>
+        android:icon="@drawable/alarm"/>
     <item
         android:id="@+id/devicesFragment"
         android:title="Dispositivos"
-        android:icon="@drawable/adddevicesbutton"/>
+        android:icon="@drawable/device"/>
 </menu>

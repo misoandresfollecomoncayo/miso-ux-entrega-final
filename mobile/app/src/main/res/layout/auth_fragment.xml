@@ -9,7 +9,7 @@
 
     <!-- TopBar convertido a ConstraintLayout -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/CollectorListTopBar"
+        android:id="@+id/MargenAuth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,7 +106,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/loginButton"
             android:layout_width="156dp"
             android:layout_height="50dp"
@@ -114,13 +114,12 @@
             android:text="INGRESAR"
             style="@style/labelsButtons"
             android:background="@drawable/bg_principal"
-            app:backgroundTint="@null"
             app:layout_constraintTop_toBottomOf="@id/inputContraseña"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/signinButton"
             android:layout_width="156dp"
             android:layout_height="50dp"
@@ -128,7 +127,6 @@
             android:text="CREAR CUENTA"
             style="@style/labelsButtonsSecondary"
             android:background="@drawable/bg_secondary"
-            app:backgroundTint="@null"
             app:layout_constraintTop_toBottomOf="@id/loginButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

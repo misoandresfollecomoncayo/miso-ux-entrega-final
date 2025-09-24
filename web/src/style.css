@@ -164,6 +164,11 @@ input[type="checkbox"]:checked::after {
   left: 4px;
 }
 
+input[type="radio"]:checked {
+  accent-color: var(--color-orange)
+}
+
+
 /* Icons */
 
 .icon {

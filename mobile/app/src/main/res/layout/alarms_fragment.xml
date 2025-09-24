@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.66" />
+                app:layout_constraintGuide_percent="0.6" />
 
             <!-- LabelsAlarma centrado en el primer tercio -->
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,7 +90,7 @@
                     style="@style/TextoInputs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lun, Mar, Mie Jue, Vie"
+                    android:text="Lun, Mar, Mie Jue"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/CantDispositivos"/>
 
@@ -151,28 +151,56 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="42dp"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
             android:contentDescription="Añadir una nueva Alarma"
             app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/addbutton"
             />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white"
-            app:itemBackground="@drawable/button"
-            app:itemIconSize="48dp"
-            app:itemIconTint="@color/black"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_nav_menu"
-            app:layout_constraintHorizontal_bias="20"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageButton
+                android:id="@+id/usrBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Usuario"
+                android:src="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/alarmsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Alarmas"
+                android:src="@drawable/alarm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <ImageButton
+                android:id="@+id/devicesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Dispositivos"
+                android:src="@drawable/device"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

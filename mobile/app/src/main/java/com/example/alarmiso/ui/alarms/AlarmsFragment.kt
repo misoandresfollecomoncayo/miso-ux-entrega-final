@@ -28,12 +28,26 @@ class AlarmsFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Botones para navegar en la funcionalidad
+
         binding.aniadirNuevaAlarma.setOnClickListener {
             findNavController().navigate(R.id.addAlarmFragment)
         }
 
         binding.editarAlarma.setOnClickListener {
             findNavController().navigate(R.id.editAlarmFragment)
+        }
+
+        //Barra de navegación inferior
+
+        //User
+        binding.usrBtn.setOnClickListener {
+            //Todo Ir al fragmento de usr
+        }
+
+        //User
+        binding.devicesBtn.setOnClickListener {
+            //Todo Ir al fragmento de devices
         }
 
     }

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/editaralarms_fragment">
+
+
+    <!-- TopBar convertido a ConstraintLayout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/MargenEditarAlarma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/encabezadoEA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageButton
+                android:id="@+id/backButtonEA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:contentDescription="Volver a atras"
+                android:src="@drawable/back_black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/titleEditarAlarma"
+                style="@style/TextoTituloGrande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar alarma"
+                android:layout_marginStart="19.64dp"
+                app:layout_constraintStart_toEndOf="@+id/backButtonEA"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Scrollable desde inputNombre -->
+        <ScrollView
+            android:id="@+id/scrollInputs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/encabezadoEA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Input nombre -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/inputNombre"
+                    android:layout_width="272dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Etiqueta nombre -->
+                    <TextView
+                        android:id="@+id/labelNombre"
+                        style="@style/TextoInputs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Nombre"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Input nombre -->
+                    <EditText
+                        android:id="@+id/inputNombreCA"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_edittext"
+                        android:hint="Alarma semana"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelNombre" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- Input dias alarma -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/inputDias"
+                    android:layout_width="272dp"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inputNombre">
+
+                    <!-- Etiqueta alarma -->
+                    <TextView
+                        android:id="@+id/labelDias"
+                        style="@style/TextoInputs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Días que se repite"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Input dias alarma -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/listaDias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelDias">
+
+                        <!-- Lunes -->
+                        <ToggleButton
+                            android:id="@+id/btnLunes"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Lun"
+                            android:textOff="Lun"
+                            style="@style/TextoInputs.Button"
+                            android:checked="true"
+                            android:background="@drawable/tag_toggle_activate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Martes -->
+                        <ToggleButton
+                            android:id="@+id/btnMartes"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Mar"
+                            android:textOff="Mar"
+                            style="@style/TextoInputs.Button"
+                            android:checked="true"
+                            android:background="@drawable/tag_toggle_activate"
+                            android:layout_marginStart="7dp"
+                            app:layout_constraintStart_toEndOf="@id/btnLunes"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Miércoles -->
+                        <ToggleButton
+                            android:id="@+id/btnMiercoles"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Mié"
+                            android:textOff="Mié"
+                            style="@style/TextoInputs.Button"
+                            android:checked="true"
+                            android:background="@drawable/tag_toggle_activate"
+                            android:layout_marginStart="7dp"
+                            app:layout_constraintStart_toEndOf="@id/btnMartes"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Jueves -->
+                        <ToggleButton
+                            android:id="@+id/btnJueves"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Jue"
+                            android:textOff="Jue"
+                            style="@style/TextoInputs.Button"
+                            android:checked="true"
+                            android:background="@drawable/tag_toggle_activate"
+                            android:layout_marginStart="7dp"
+                            app:layout_constraintStart_toEndOf="@id/btnMiercoles"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Viernes -->
+                        <ToggleButton
+                            android:id="@+id/btnViernes"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Vie"
+                            android:textOff="Vie"
+                            style="@style/TextoInputs.Button"
+                            android:checked="true"
+                            android:background="@drawable/tag_toggle_activate"
+                            android:layout_marginStart="7dp"
+                            app:layout_constraintStart_toEndOf="@id/btnJueves"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Sábado -->
+                        <ToggleButton
+                            android:id="@+id/btnSabado"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Sáb"
+                            android:textOff="Sáb"
+                            style="@style/TextoInputs.Button"
+                            android:background="@drawable/tag_toggle_activate"
+                            android:layout_marginStart="7dp"
+                            app:layout_constraintStart_toEndOf="@id/btnViernes"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Domingo -->
+                        <ToggleButton
+                            android:id="@+id/btnDomingo"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:textOn="Do"
+                            android:textOff="Do"
+                            style="@style/TextoInputs.Button"
+                            android:background="@drawable/tag_toggle_activate"
+                            android:layout_marginStart="7dp"
+                            app:layout_constraintStart_toEndOf="@id/btnSabado"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- Input hora -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/inputHora"
+                    android:layout_width="272dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inputDias">
+
+                    <!-- Etiqueta hora -->
+                    <TextView
+                        android:id="@+id/labelHora"
+                        style="@style/TextoInputs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Hora"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Input hora -->
+                    <EditText
+                        android:id="@+id/inputHoraCA"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_edittext"
+                        android:hint="6 a.m."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelHora" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Input agrupaciones -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/inputAgrupaciones"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inputHora">
+
+                    <TextView
+                        android:id="@+id/labelAgrupaciones"
+                        style="@style/TextoInputs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:text="Seleccionar agrupaciones"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxAgrupacion1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        style="@style/TextoInputs"
+                        android:text="Alarma tranquila"
+                        android:checked="true"
+                        android:buttonTint="@color/orange"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelAgrupaciones" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxAgrupacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        style="@style/TextoInputs"
+                        android:text="Alarma ruidosa"
+                        android:buttonTint="@color/orange"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/checkboxAgrupacion1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Input agrupaciones -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/switchActivoCA"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inputAgrupaciones">
+
+                    <Switch
+                        android:id="@+id/switchCA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alarma activa"
+                        style="@style/TextoInputs"
+                        android:track="@drawable/switch_track"
+                        android:thumb="@drawable/knob"
+                        android:checked="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="156dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Guardars"
+                    style="@style/labelsButtons"
+                    android:background="@drawable/bg_principal"
+                    app:layout_constraintTop_toBottomOf="@id/switchActivoCA"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

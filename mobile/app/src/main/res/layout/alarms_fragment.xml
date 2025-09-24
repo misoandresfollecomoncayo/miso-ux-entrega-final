@@ -27,8 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alarmas"
-            app:layout_constraintBottom_toBottomOf="0dp"
-            app:layout_constraintEnd_toEndOf="0dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ListaItemsAlarmas"
@@ -147,7 +147,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageButton
-            android:id="@+id/añadirNuevaAlarma"
+            android:id="@+id/aniadirNuevaAlarma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="42dp"

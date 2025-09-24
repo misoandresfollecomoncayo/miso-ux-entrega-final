@@ -7,7 +7,21 @@
     <fragment
         android:id="@+id/authFragment"
         android:name="com.example.alarmiso.ui.auth.AuthFragment"
-        android:label="Autg"/>
+        android:label="Auth"/>
 
+    <fragment
+        android:id="@+id/alarmsFragment"
+        android:name="com.example.alarmiso.ui.alarms.AlarmsFragment"
+        android:label="Alarms"/>
+
+    <fragment
+        android:id="@+id/addAlarmFragment"
+        android:name="com.example.alarmiso.ui.alarms.AddAlarmFragment"
+        android:label="Add Alarms"/>
+
+    <fragment
+        android:id="@+id/editAlarmFragment"
+        android:name="com.example.alarmiso.ui.alarms.EditAlarmFragment"
+        android:label="Edit Alarms"/>
 
 </navigation>

@@ -1,17 +1,17 @@
-package com.example.alarmiso.ui.auth
+package com.example.alarmiso.ui.alarms
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
-import com.example.alarmiso.databinding.AuthFragmentBinding
+import com.example.alarmiso.databinding.FragmentCreatealarmBinding
 import android.view.ViewGroup
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.alarmiso.R
 
-class AuthFragment: Fragment() {
+class AddAlarmFragment: Fragment() {
 
-    private var _binding: AuthFragmentBinding? = null
+    private var _binding: FragmentCreatealarmBinding? = null
 
     private val binding get() = _binding!!
 
@@ -19,7 +19,7 @@ class AuthFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-        _binding = AuthFragmentBinding.inflate(inflater, container, false)
+        _binding = FragmentCreatealarmBinding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -27,9 +27,14 @@ class AuthFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.loginButton.setOnClickListener {
+        binding.createButton.setOnClickListener {
             findNavController().navigate(R.id.alarmsFragment)
         }
+
+        binding.backButtonCA.setOnClickListener {
+            findNavController().navigate(R.id.alarmsFragment)
+        }
+
     }
 
 }

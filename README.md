@@ -32,8 +32,10 @@ En los siguientes enlaces se pueden consultar los prototipos de interacción des
 * Generar código QR de alarmas
 * Eliminar alarma
 * Consultar dispositivos
-* Vincular dispositivo
-* Perfil del usuario
+* Vincular dispositivos
+* Confirmación dispositivo vinculado
+* Editar dispositivos
+* Eliminar dispositivos
 
 ## Tecnologías
 

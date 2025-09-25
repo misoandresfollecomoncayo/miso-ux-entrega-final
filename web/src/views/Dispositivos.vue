@@ -1,10 +1,10 @@
 <template>
   <popup v-show="showPopup===true" title="Eliminar dispositivo" text="¿Confirmas eliminar el dispositivo?" @cancel="showPopup=false" @confirm="showPopup=false"></popup>
   <MainContainer selected="Mis dispositivos" add-link="/dispositivos/crear">
-    <div v-for="a in dispositivos" class="dispositivo-item">
+    <div v-for="d in dispositivos" class="dispositivo-item">
       <div>
-        <div class="subtitulo" style="margin-bottom:10px">{{a.title}}</div>
-        <div>{{a.conexion}} dispositivos</div>
+        <div class="subtitulo" style="margin-bottom:10px">{{d.title}}</div>
+        <div>{{d.conectado ? "Conectado" : "No conectado"}}</div>
       </div>
       <div style="display:flex; gap: 10px">
         <a class="btn btn-sm btn-midnight-violet" href="/dispositivos/editar">
@@ -28,19 +28,19 @@
   const dispositivos = [
     {
       title: "Bombillo baño",
-      conexion: "Conectado"
+      conectado: true
     },
     {
         title: "Bombillo cocina",
-        conexion: "No conectado"
+        conectado: false
     },
     {
         title: "Parlante sala",
-        conexion: "Conectado"
+        conectado: true
     },
     {
         title: "Cortina habitación",
-        conexion: "Conectado"
+        conectado: true
     }
   ]
 </script>

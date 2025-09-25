@@ -8,7 +8,7 @@
         </div>
         <div>
           <label>Nombre</label>
-          <input :class="errorName === true ? 'input-error' : ''" @blur="validateName" v-model="name"/>      
+          <input :class="errorName === true ? 'input-error' : ''" @blur="validateName" v-model="name" placeholder="Digita el nombre del dispositivo"/>      
         </div>
         <div>
           <label style="margin-bottom: 15px">Tipo de dispositivo</label>

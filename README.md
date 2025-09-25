@@ -22,11 +22,10 @@ En los siguientes enlaces se pueden consultar los prototipos de interacción des
 
 # 3. Aplicación Web
 
-
-**Antes de clonar o descargar el código revise el siguiente link para podes desplegar la aplicación web correctamente** <br>
+**Antes de clonar o descargar el código, revise el siguiente link que contiene las instrucciones para desplegar la aplicación web correctamente** <br>
 [Documentación App - Web](/web/)
 
 # 4. Aplicación Mobile
 
-**Antes de clonar o descargar el código revise el siguiente link para podes desplegar la aplicación mobile correctamente** <br>
-[Documentación App - mobile](/mobile/)
+**Antes de clonar o descargar el código, revise el siguiente link que contiene las instrucciones para desplegar la aplicación mobile correctamente** <br>
+[Documentación App - Mobile](/mobile/)

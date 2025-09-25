@@ -1,17 +1,17 @@
 ## Funciones implementadas
 
-* Autenticación
-* Autenticación de dos factores
-* Consultar alarmas
-* Crear alarmas
-* Editar alarmas
-* Generar código QR de alarmas
-* Eliminar alarma
-* Consultar dispositivos
-* Vincular dispositivos
-* Confirmación dispositivo vinculado
-* Editar dispositivos
-* Eliminar dispositivos
+* Autenticación (Andrés Folleco)
+* Autenticación de dos factores (Andrés Folleco)
+* Consultar alarmas (Andrés Folleco)
+* Crear alarmas (Andrés Folleco)
+* Editar alarmas (Andrés Folleco)
+* Generar código QR de alarmas (Andrés Folleco)
+* Eliminar alarma (Andrés Folleco)
+* Consultar dispositivos (Pablo Rivera)
+* Vincular dispositivos (Pablo Rivera)
+* Confirmación dispositivo vinculado (Pablo Rivera)
+* Editar dispositivos (Pablo Rivera)
+* Eliminar dispositivos (Pablo Rivera)
 
 ## Tecnologías
 

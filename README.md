@@ -22,39 +22,11 @@ En los siguientes enlaces se pueden consultar los prototipos de interacción des
 
 # 3. Aplicación Web
 
-## Funciones implementadas
 
-* Autenticación
-* Autenticación de dos factores
-* Consultar alarmas
-* Crear alarmas
-* Editar alarmas
-* Generar código QR de alarmas
-* Eliminar alarma
-* Consultar dispositivos
-* Vincular dispositivo
-* Perfil del usuario
-
-## Tecnologías
-
-* HTML
-* CSS
-* Javascript
-* Vue.js
-
-## Instrucciones de ejecución
-
-Para ejecutar la Aplicación Web, debe tener instalado: <code>node</code> y <code>npm</code>. Luego ejecute los siguientes comandos en su consola:
-
-1. cd web/
-2. npm install
-3. npm run dev
-4. Ingrese a la url generada, por defecto: http://localhost:5173/
+**Antes de clonar o descargar el código revise el siguiente link para podes desplegar la aplicación web correctamente** <br>
+[Documentación App - Web](/web/)
 
 # 4. Aplicación Mobile
 
-## Funciones implementadas
-
-## Tecnologías
-
-## Instrucciones de ejecución
+**Antes de clonar o descargar el código revise el siguiente link para podes desplegar la aplicación mobile correctamente** <br>
+[Documentación App - mobile](/mobile/)

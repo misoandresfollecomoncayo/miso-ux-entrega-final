@@ -1,20 +1,23 @@
 # AlarMISO - Mobile
 
-Esta carpeta tiene el codigo fuente de la maquetación de Front-end para la aplicación mobile, correspondiente al trabajo final del curso. UX Mejoramiento de la experiencia de usuario.
+Esta carpeta tiene el codigo fuente de la maquetación de Front-end para la aplicación mobile, correspondiente al trabajo final del curso: UX Mejoramiento de la experiencia de usuario.
 
 AlarMISO Mobile, es una aplicacion que permite crear alarmas para evitar el snnozing, aprovechando los dispositivos inteligentes que tienes en tu hogar.
 
 * [Ver prototipo Aplicación Mobile](https://www.figma.com/proto/nys5SfSqGC2WUOJisWk6rZ/MISO---UX-Mejoramiento-de-la-experiencia-de-usuario---Proyecto-Alarmas--Prototipo-?node-id=2042-1517&p=f&t=qu6YcFs3eaQJoaNB-0&scaling=scale-down&content-scaling=fixed&page-id=156%3A2734&starting-point-node-id=2042%3A1517)
 
-# Funcionalidades Principales
+## Funcionalidades Principales
 
-A continuación se listaran las funcionalidades que se encontraran en la App y la persona que lo desarrollo:    
+A continuación se listan las funcionalidades implementadas en la App y la persona que lo desarrolló:<br/>
+
 - Ingresar a tu cuenta (Pablo Rivera)
 - Listar alarmas (Pablo Rivera)
 - Crear alarma (Pablo Rivera)
 - Editar alarma (Pablo Rivera)
+- Listar dispositivos (Andrés Folleco)
+- Editar dispositivo (Andrés Folleco)
 
-# Cómo Ejecutar el Código Fuente
+## Cómo Ejecutar el Código Fuente
 
 ### Requisitos previos
 - Android Studio (última versión recomendada)
@@ -39,7 +42,7 @@ Antes de abrir el proyecto en Android Studio siga estos pasos:
 - Ejecuta la aplicación seleccionando tu dispositivo virtual o físico y presionando el botón Run.
 - (Opcional) Utilice el atajo para ejecutar el run de la aplicación **Ctrl + R** para Mac y **Shift + F10** para windows.
 
-# Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Kotlin
 - Android Jetpack

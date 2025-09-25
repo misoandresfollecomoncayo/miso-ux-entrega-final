@@ -3,15 +3,15 @@ package com.example.alarmiso.ui.alarms
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
-import com.example.alarmiso.databinding.FragmentEditalarmBinding
+import com.example.alarmiso.databinding.FragmentAlarmsEditBinding
 import android.view.ViewGroup
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.alarmiso.R
 
-class EditAlarmFragment: Fragment() {
+class Fragment_Alarms_Edit: Fragment() {
 
-    private var _binding: FragmentEditalarmBinding? = null
+    private var _binding: FragmentAlarmsEditBinding? = null
 
     private val binding get() = _binding!!
 
@@ -19,7 +19,7 @@ class EditAlarmFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-        _binding = FragmentEditalarmBinding.inflate(inflater, container, false)
+        _binding = FragmentAlarmsEditBinding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -27,11 +27,11 @@ class EditAlarmFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.saveButton.setOnClickListener {
+        binding.btnSave.setOnClickListener {
             findNavController().navigate(R.id.alarmsFragment)
         }
 
-        binding.backButtonEA.setOnClickListener {
+        binding.btnBack.setOnClickListener {
             findNavController().navigate(R.id.alarmsFragment)
         }
 

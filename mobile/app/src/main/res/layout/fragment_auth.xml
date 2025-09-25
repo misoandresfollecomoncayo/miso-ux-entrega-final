@@ -10,8 +10,9 @@
     <!-- TopBar convertido a ConstraintLayout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/MargenAuth"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,33 +28,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/titleAuth"
-            style="@style/TextoTituloGrande"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Autenticación"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/logoAuth" />
-
         <!-- Input email -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/inputEmail"
-            android:layout_width="272dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="29dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleAuth">
+            app:layout_constraintTop_toBottomOf="@id/logoAuth">
 
             <!-- Etiqueta email -->
             <TextView
                 android:id="@+id/labelEmail"
                 style="@style/TextoInputs"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:text="Correo electrónico"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -61,11 +51,12 @@
             <!-- Input email -->
             <EditText
                 android:id="@+id/inputEmailAuth"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/TextoInputs"
                 android:background="@drawable/bg_edittext"
-                android:hint="Digita el valor"
+                android:hint="Digita tu correo electrónico"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/labelEmail" />
@@ -75,31 +66,33 @@
         <!-- Input contraseña -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/inputContraseña"
-            android:layout_width="272dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/inputEmail">
 
-            <!-- Etiqueta email -->
+            <!-- Etiqueta contraseña -->
             <TextView
                 android:id="@+id/labelContraseña"
                 style="@style/TextoInputs"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:text="Contraseña"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- Input email -->
+            <!-- Input contraseña -->
             <EditText
+                android:inputType="textPassword"
                 android:id="@+id/inputContraseñaAuth"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/TextoInputs"
                 android:background="@drawable/bg_edittext"
-                android:hint="Digita el valor"
+                android:hint="Digita tu contraseña"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/labelContraseña" />
@@ -108,22 +101,21 @@
 
         <Button
             android:id="@+id/loginButton"
-            android:layout_width="156dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="41dp"
+            android:layout_marginTop="40dp"
             android:text="INGRESAR"
             style="@style/labelsButtons"
-            android:background="@drawable/bg_principal"
+            android:background="@drawable/bg_orange"
             app:layout_constraintTop_toBottomOf="@id/inputContraseña"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
-
         <Button
             android:id="@+id/signinButton"
-            android:layout_width="156dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:text="CREAR CUENTA"
             style="@style/labelsButtonsSecondary"
             android:background="@drawable/bg_secondary"
@@ -132,15 +124,6 @@
             app:layout_constraintStart_toStartOf="parent"
             />
 
-
-
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

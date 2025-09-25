@@ -4,8 +4,16 @@
     <style name="TextoTituloGrande">
         <item name="android:fontFamily">@font/opensans_regular</item>
         <item name="android:textSize">25dp</item>
-        <item name="android:textStyle">normal</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:lineSpacingExtra">25dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Estilo 2: Open Sans normal -->
+    <style name="Titulo">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
 
@@ -25,7 +33,7 @@
     <style name="labelsButtons">
         <item name="android:fontFamily">@font/opensans_regular</item>
         <item name="android:textSize">14dp</item>
-        <item name="android:textStyle">normal</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:lineSpacingExtra">14dp</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
@@ -33,7 +41,7 @@
     <style name="labelsButtonsSecondary">
         <item name="android:fontFamily">@font/opensans_regular</item>
         <item name="android:textSize">14dp</item>
-        <item name="android:textStyle">normal</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:lineSpacingExtra">14dp</item>
         <item name="android:textColor">#FE7838</item>
     </style>

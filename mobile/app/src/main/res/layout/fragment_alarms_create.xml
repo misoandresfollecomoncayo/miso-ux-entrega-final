@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:id="@+id/fragment_alarms_edit">
+
+    <!-- Title -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:contentDescription="Volver a atras"
+            android:src="@drawable/back_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/titleEditarAlarma"
+            style="@style/TextoTituloGrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear alarma"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:id="@+id/scrollInputs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Input nombre -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/inputNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- Etiqueta nombre -->
+                <TextView
+                    android:id="@+id/labelNombre"
+                    style="@style/TextoInputs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre" />
+
+                <!-- Input nombre -->
+                <EditText
+                    android:id="@+id/inputNombreCA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextoInputs"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Digita el nombre de la alarma"/>
+            </LinearLayout>
+
+            <!-- Input dias alarma -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/inputDias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- Etiqueta días que se repite -->
+                <TextView
+                    android:id="@+id/labelDias"
+                    style="@style/TextoInputs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Días que se repite"/>
+
+                <!-- Input dias alarma -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/listaDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <!-- Lunes -->
+                    <ToggleButton
+                        android:id="@+id/btnLunes"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Lun"
+                        android:textOff="Lun"
+                        style="@style/TextoInputs.Button"
+                        android:checked="false"
+                        android:background="@drawable/tag_toggle_activate"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+                    <!-- Martes -->
+                    <ToggleButton
+                        android:id="@+id/btnMartes"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Mar"
+                        android:textOff="Mar"
+                        style="@style/TextoInputs.Button"
+                        android:checked="false"
+                        android:background="@drawable/tag_toggle_activate"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintLeft_toRightOf="@id/btnLunes"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Miércoles -->
+                    <ToggleButton
+                        android:id="@+id/btnMiercoles"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Mié"
+                        android:textOff="Mié"
+                        style="@style/TextoInputs.Button"
+                        android:checked="false"
+                        android:background="@drawable/tag_toggle_activate"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintLeft_toRightOf="@id/btnMartes"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Jueves -->
+                    <ToggleButton
+                        android:id="@+id/btnJueves"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Jue"
+                        android:textOff="Jue"
+                        style="@style/TextoInputs.Button"
+                        android:checked="false"
+                        android:background="@drawable/tag_toggle_activate"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintLeft_toRightOf="@id/btnMiercoles"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Viernes -->
+                    <ToggleButton
+                        android:id="@+id/btnViernes"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Vie"
+                        android:textOff="Vie"
+                        style="@style/TextoInputs.Button"
+                        android:checked="false"
+                        android:background="@drawable/tag_toggle_activate"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintStart_toEndOf="@id/btnJueves"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Sábado -->
+                    <ToggleButton
+                        android:id="@+id/btnSabado"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Sáb"
+                        android:textOff="Sáb"
+                        style="@style/TextoInputs.Button"
+                        android:background="@drawable/tag_toggle_activate"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintStart_toEndOf="@id/btnViernes"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Domingo -->
+                    <ToggleButton
+                        android:id="@+id/btnDomingo"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:textOn="Dom"
+                        android:textOff="Dom"
+                        style="@style/TextoInputs.Button"
+                        android:background="@drawable/tag_toggle_activate"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintStart_toEndOf="@id/btnSabado"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Input hora -->
+            <LinearLayout
+                android:id="@+id/inputHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <!-- Etiqueta hora -->
+                <TextView
+                    android:id="@+id/labelHora"
+                    style="@style/TextoInputs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Hora"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Input hora -->
+                <EditText
+                    android:id="@+id/inputHoraCA"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Digita la hora de la alarma"
+                    style="@style/TextoInputs"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelHora" />
+
+            </LinearLayout>
+
+            <!-- Agrupaciones -->
+            <LinearLayout
+                android:id="@+id/inputAgrupaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelAgrupaciones"
+                    style="@style/TextoInputs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar agrupaciones"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/checkboxAgrupacion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    style="@style/TextoInputs"
+                    android:text="Alarma tranquila"
+                    android:checked="false"
+                    android:buttonTint="@color/orange"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelAgrupaciones" />
+
+                <CheckBox
+                    android:id="@+id/checkboxAgrupacion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    style="@style/TextoInputs"
+                    android:text="Alarma ruidosa"
+                    android:buttonTint="@color/orange"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkboxAgrupacion1" />
+
+            </LinearLayout>
+
+            <!-- Alarma activa -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Alarma activa?"
+                    style="@style/TextoInputs"
+                    android:layout_marginRight="10dp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchCA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:track="@drawable/switch_track"
+                    android:thumb="@drawable/switch_thumb"
+                    android:checked="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Guardar"
+        android:textStyle="bold"
+        android:background="@drawable/bg_orange"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_alarms_edit"
+        style="@style/labelsButtons" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

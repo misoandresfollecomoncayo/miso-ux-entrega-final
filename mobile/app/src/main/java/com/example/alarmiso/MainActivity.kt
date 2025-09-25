@@ -21,8 +21,5 @@ class MainActivity : AppCompatActivity() {
         val navController = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment)!!
             .findNavController()
-
-
-
     }
 }

@@ -6,22 +6,32 @@
 
     <fragment
         android:id="@+id/authFragment"
-        android:name="com.example.alarmiso.ui.auth.AuthFragment"
+        android:name="com.example.alarmiso.ui.auth.Fragment_Auth"
         android:label="Auth"/>
 
     <fragment
         android:id="@+id/alarmsFragment"
-        android:name="com.example.alarmiso.ui.alarms.AlarmsFragment"
+        android:name="com.example.alarmiso.ui.alarms.Fragment_Alarms"
         android:label="Alarms"/>
 
     <fragment
         android:id="@+id/addAlarmFragment"
-        android:name="com.example.alarmiso.ui.alarms.AddAlarmFragment"
+        android:name="com.example.alarmiso.ui.alarms.Fragment_Alarms_Create"
         android:label="Add Alarms"/>
 
     <fragment
         android:id="@+id/editAlarmFragment"
-        android:name="com.example.alarmiso.ui.alarms.EditAlarmFragment"
+        android:name="com.example.alarmiso.ui.alarms.Fragment_Alarms_Edit"
+        android:label="Edit Alarms"/>
+
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="com.example.alarmiso.ui.alarms.Fragment_Devices"
+        android:label="Edit Alarms"/>
+
+    <fragment
+        android:id="@+id/fragment_devices_edit"
+        android:name="com.example.alarmiso.ui.alarms.Fragment_Devices_Edit"
         android:label="Edit Alarms"/>
 
 </navigation>

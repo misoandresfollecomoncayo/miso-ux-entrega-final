@@ -5,17 +5,14 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/alarms_fragment">
+    android:id="@+id/alarms_fragment"
+    android:padding="40dp">
 
     <!-- TopBar convertido a ConstraintLayout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/MargenListaAlarmas"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="22dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginRight="39dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,10 +65,10 @@
 
                 <TextView
                     android:id="@+id/NombreAlarma"
-                    style="@style/TextoInputs"
+                    style="@style/Titulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Alarmas Semana"
+                    android:text="Alarma semanal"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginTop="10dp"/>
@@ -90,7 +87,7 @@
                     style="@style/TextoInputs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lun, Mar, Mie Jue"
+                    android:text="Lun, Mar, Mié, Jue, Vie"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/CantDispositivos"/>
 
@@ -99,7 +96,7 @@
                     style="@style/TextoInputs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6 a.m."
+                    android:text="6:00 a.m."
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/diasAlarma"/>
 

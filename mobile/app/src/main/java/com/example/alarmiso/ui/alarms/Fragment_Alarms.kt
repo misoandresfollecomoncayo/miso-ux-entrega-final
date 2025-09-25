@@ -3,16 +3,16 @@ package com.example.alarmiso.ui.alarms
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
-import com.example.alarmiso.databinding.AlarmsFragmentBinding
+import com.example.alarmiso.databinding.FragmentAlarmsBinding
 import android.view.ViewGroup
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.alarmiso.R
 
 
-class AlarmsFragment: Fragment() {
+class Fragment_Alarms: Fragment() {
 
-    private var _binding: AlarmsFragmentBinding? = null
+    private var _binding: FragmentAlarmsBinding? = null
 
     private val binding get() = _binding!!
 
@@ -20,7 +20,7 @@ class AlarmsFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-        _binding = AlarmsFragmentBinding.inflate(inflater, container, false)
+        _binding = FragmentAlarmsBinding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -47,7 +47,7 @@ class AlarmsFragment: Fragment() {
 
         //User
         binding.devicesBtn.setOnClickListener {
-            //Todo Ir al fragmento de devices
+            findNavController().navigate(R.id.devicesFragment)
         }
 
     }

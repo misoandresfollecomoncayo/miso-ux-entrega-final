@@ -10,7 +10,7 @@ AlarMISO Mobile, es una aplicacion que permite crear alarmas para evitar el snno
 
 A continuación se listan las funcionalidades implementadas en la App y la persona que lo desarrolló:<br/>
 
-- Ingresar a tu cuenta (Pablo Rivera)
+- Autenticación (Andrés Folleco)
 - Listar alarmas (Pablo Rivera)
 - Crear alarma (Pablo Rivera)
 - Editar alarma (Pablo Rivera)
